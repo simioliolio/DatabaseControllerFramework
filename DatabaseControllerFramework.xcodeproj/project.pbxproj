@@ -89,6 +89,7 @@
 				91C682391B00C7A800DBD177 /* DatabaseControllerFramework */,
 				91C682461B00C7A800DBD177 /* DatabaseControllerFrameworkTests */,
 				91C682381B00C7A800DBD177 /* Products */,
+				91CE17731B00D490005E3F4A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,8 +110,6 @@
 				91C682541B00CC5000DBD177 /* DatabaseController.m */,
 				91C682561B00CC5000DBD177 /* DatabaseControllerColumn.h */,
 				91C682551B00CC5000DBD177 /* DatabaseControllerColumn.m */,
-				91C682721B00CE9700DBD177 /* libsqlite3.0.dylib */,
-				91C682711B00CE4C00DBD177 /* fmdb */,
 				91C6823A1B00C7A800DBD177 /* Supporting Files */,
 			);
 			path = DatabaseControllerFramework;
@@ -157,6 +156,16 @@
 				91C682651B00CE3E00DBD177 /* FMResultSet.m */,
 			);
 			name = fmdb;
+			path = DatabaseControllerFramework;
+			sourceTree = "<group>";
+		};
+		91CE17731B00D490005E3F4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91C682721B00CE9700DBD177 /* libsqlite3.0.dylib */,
+				91C682711B00CE4C00DBD177 /* fmdb */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -471,6 +480,7 @@
 				91C6824F1B00C7A800DBD177 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		91C682501B00C7A800DBD177 /* Build configuration list for PBXNativeTarget "DatabaseControllerFrameworkTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +489,7 @@
 				91C682521B00C7A800DBD177 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
