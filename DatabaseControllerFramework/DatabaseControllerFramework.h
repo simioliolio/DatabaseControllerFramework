@@ -8,6 +8,8 @@
 
 #import <Cocoa/Cocoa.h>
 
+#import <DatabaseControllerFramework/DatabaseController.h>
+
 //! Project version number for DatabaseControllerFramework.
 FOUNDATION_EXPORT double DatabaseControllerFrameworkVersionNumber;
 
@@ -15,5 +17,6 @@ FOUNDATION_EXPORT double DatabaseControllerFrameworkVersionNumber;
 FOUNDATION_EXPORT const unsigned char DatabaseControllerFrameworkVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <DatabaseControllerFramework/PublicHeader.h>
+
 
 
