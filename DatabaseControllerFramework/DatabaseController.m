@@ -240,50 +240,6 @@
 
 @end
 
-/*
-// Database Controller usage example
-
-// set these to customize database name and location
-NSString *folderForDatabase = @"/tmp/";
-NSString *databaseNameAndExtension = @"database.sqlite";
-NSString *pathStringForDatabase = [NSString stringWithFormat:@"%@%@", folderForDatabase, databaseNameAndExtension];
-NSString *tableName = @"userDetails";
-DatabaseControllerColumn *lastNameColumn = [[DatabaseControllerColumn alloc] initWithName:@"LastName" dataType:DatabaseControllerColumnDataTypeText];
-DatabaseControllerColumn *firstNameColumn = [[DatabaseControllerColumn alloc] initWithName:@"FirstName" dataType:DatabaseControllerColumnDataTypeText];
-DatabaseControllerColumn *addresssColumn = [[DatabaseControllerColumn alloc] initWithName:@"Address" dataType:DatabaseControllerColumnDataTypeText];
-DatabaseControllerColumn *emailColumn = [[DatabaseControllerColumn alloc] initWithName:@"Email" dataType:DatabaseControllerColumnDataTypeText];
-NSArray *columnDefinitionArray = @[lastNameColumn,firstNameColumn,addresssColumn,emailColumn];
-DatabaseController *dbController = [[DatabaseController alloc] initWithDatabaseFilePath:pathStringForDatabase tableName:tableName columnArray:columnDefinitionArray];
-// add a test entry
-NSDictionary *testDictionary = @{@"LastName": @"Gander",@"FirstName": @"Simion",@"Address": @"62, Hatstand Trestle, London W4A 4A4",@"Email": @"simon@hatstand.com"};
-if ([dbController addEntryToDatabase:testDictionary]) {
-    NSLog(@"DatabaseController: Database entry added successfully");
-} else {
-    NSLog(@"DatabaseController: Warning: Database entry NOT added successfully");
-}
-// -- end main test */
-
-/*
-// -- different test (3 columns)
-// set these to customize database name and location
-NSString *folderForDatabase = @"/tmp/";
-NSString *databaseNameAndExtension = @"database.sqlite";
-NSString *pathStringForDatabase = [NSString stringWithFormat:@"%@%@", folderForDatabase, databaseNameAndExtension];
-NSString *tableName = @"Steelers Wheel Lyrical Analysis";
-DatabaseControllerColumn *left = [[DatabaseControllerColumn alloc] initWithName:@"left of me" dataType:DatabaseControllerColumnDataTypeText];
-DatabaseControllerColumn *right = [[DatabaseControllerColumn alloc] initWithName:@"to the right" dataType:DatabaseControllerColumnDataTypeText];
-DatabaseControllerColumn *middle = [[DatabaseControllerColumn alloc] initWithName:@"in the middle with you" dataType:DatabaseControllerColumnDataTypeText];
-NSArray *columnDefinitionArray = @[left,right,middle];
-DatabaseController *dbController = [[DatabaseController alloc] initWithDatabaseFilePath:pathStringForDatabase tableName:tableName columnArray:columnDefinitionArray];
-NSDictionary *testDictionary = @{@"left of me": @"Clowns",@"to the right": @"Jokers",@"in the middle with you": @"Me, stuck."};
-if ([dbController addEntryToDatabase:testDictionary]) {
-    NSLog(@"DatabaseController: Database entry added successfully");
-} else {
-    NSLog(@"DatabaseController: Warning: Database entry NOT added successfully");
-}
-// -- end -- */
-
-
 
 
 
