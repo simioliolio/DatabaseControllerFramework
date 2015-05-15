@@ -63,12 +63,16 @@
  */
 -(NSArray*)acquireIndexesForTableEntry:(id)entry ofColumnType:(DatabaseControllerColumnDataType)columnType;
 
-/* todo
+/* Acquire a whole column
  */
 -(NSArray*)acquireAllEntriesFromColumnWithName:(NSString*)columnName;
 
-// not a zero-counted index
+/* Acquire a range of rows from a column. The range is 
+ * not zero-counted.
+ */
 -(NSArray*)acquireEntriesFromColumnWithName:(NSString*)columnName withRangeOfIndexes:(NSRange)range;
 
+/* Size of table
+ */
 -(NSNumber*)currentNumberOfEntriesInTable;
 @end
